@@ -72,6 +72,7 @@ To avoid this additional command every time, execute those two commands:
     source ~/.bashrc
 
 Now, every time you open a terminal, this command is executed.
+You can do these two commands for every package you install, simply by substituting the `python_example_ros` part with your `package_name`!
 
 ### 4. Initialize a roscore
 Open a new terminal, and type:
