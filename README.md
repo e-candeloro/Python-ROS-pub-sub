@@ -66,13 +66,6 @@ After the following command, two new folders named "build" and "devel" should ap
 
 ### 3. Initialize roscore and add devel setup to bashrc
 Every time you open a new terminal and  want to work with launch files and packages inside the workspace, you need to execute the command: `source devel/setup.bash`.
-To avoid this additional command every time, execute those two commands:
-
-    echo "source ~/python_example_ros/devel/setup.bash" >> ~/.bashrc
-    source ~/.bashrc
-
-Now, every time you open a terminal, this command is executed.
-You can do these two commands for every package you install, simply by substituting the `python_example_ros` part with your `package_name`!
 
 ### 4. Initialize a roscore
 Open a new terminal, and type:
@@ -88,20 +81,23 @@ When executing ros nodes, one and only one roscore needs to be running!
 In our case, with the Python publisher and subriber we want to do the following:
 
 1. Start the publishing node:
-
+2. 
+        source devel/setup.bash
         rosrun python_pub_sub publisher_node.py
 
     The node also logs in the terminal the data that is publishing
 
-2. Start the subscriber node (on new terminal!)
-
-       rosrun python_pub_sub subscriber_node.py
+3. Start the subscriber node (on new terminal!)
+        
+        source devel/setup.bash
+        rosrun python_pub_sub subscriber_node.py
     
     You should now see in the terminal the message the subriber is receiving while the publisher is speaking.
 
-3. Kill the python publisher node by CTRL + C in the terminal
-4. Try to launch the other publisher_node_v2.py
-
+4. Kill the python publisher node by CTRL + C in the terminal
+5. Try to launch the other publisher_node_v2.py
+6. 
+        source devel/setup.bash
         rosrun python_pub_sub publisher_node_v2.py
     This node uses the `ros_publisher.py` class to offer more flexibility when publishing messages, especially if you need to publish one or in some cases!
     You should see the subriber receiving data with a different message.
