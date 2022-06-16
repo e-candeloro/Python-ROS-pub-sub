@@ -49,9 +49,12 @@ Also thsi [video tutorial for ROS installation](https://youtu.be/PowY8dV36DY).
 
 ## Using the ROS packages in this repository
 ### 1. Clone this repository
-Clone this repo using `git clone [repo link here]`.
+Clone this repo using
+
+    git clone https://github.com/e-candeloro/Python-ROS-pub-sub.git
+
 ### 2. Build the workspace with catkin
-Move inside the folder `~/python_example_ros/`.
+Move inside the folder `ROS/python_example_ros/`. This is called the "workspace" folder.
 If you are in the repo main folder:
     
     cd ROS/python_example_ros
