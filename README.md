@@ -10,7 +10,9 @@ Allocate at least 25 GB of disk space and install with the minimal installation 
 
 ## Installing ROS 1 Noetic
 ### 1. Configure Ubuntu repo
-Configure your Ubuntu repositories to allow "restricted," "universe," and "multiverse." You can follow the [Ubuntu guide for instructions on doing this](https://help.ubuntu.com/community/Repositories/Ubuntu).
+Configure your Ubuntu repositories to allow "restricted," "universe," and "multiverse."
+The simplest way to do it is go on the Software and Updates app in the menù, and search and check the options that contain the words restricted, multiverse and universe. 
+You can follow the [Ubuntu guide for instructions on doing this](https://help.ubuntu.com/community/Repositories/Ubuntu).
 
 Open a terminal and imput those commands:
     
